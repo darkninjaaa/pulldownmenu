@@ -5,51 +5,61 @@
 var MENU_NAV_BUTTON = "nav-button"
 var MENU_NAV_UL     = "nav-ul"
 
-var _typeof = 
-	typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? 
-		function(obj) { return typeof obj; } : 
-		function(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+if (!_typeof) {
+	var _typeof = 
+		typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? 
+			function(obj) { return typeof obj; } : 
+			function(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+}
 
-var _extends = Object.assign || function(target) {
-    for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-        for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-                target[key] = source[key];
-            }
-        }
-    }
-    return target;
-};
 
-var _createClass = function() {
-    function defineProperties(target, props) 
+if (!_extends) {
+	var _extends = Object.assign || function(target) 
 	{
-        for (var i = 0; i < props.length; i++) 
-		{
-            var descriptor = props[i];
+		for (var i = 1; i < arguments.length; i++) {
+			var source = arguments[i];
+			for (var key in source) {
+				if (Object.prototype.hasOwnProperty.call(source, key)) {
+					target[key] = source[key];
+				}
+			}
+		}
+		return target;
+	};
+}
+
+
+if (!_createClass) {
+	var _createClass = function() 
+	{
+		function defineProperties(target, props) {
+			for (var i = 0; i < props.length; i++) {
+				var descriptor = props[i];
 			
-            descriptor.enumerable = descriptor.enumerable || false;
-            descriptor.configurable = true;
+				descriptor.enumerable = descriptor.enumerable || false;
+				descriptor.configurable = true;
 			
-            if ("value" in descriptor) descriptor.writable = true;
+				if ("value" in descriptor) descriptor.writable = true;
 			
-            Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }
-	
-    return function(Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);
-        if (staticProps) defineProperties(Constructor, staticProps);
-        return Constructor;
-    };
-}();
- 
-function _classCallCheck(instance, Constructor) 
-{
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
+				Object.defineProperty(target, descriptor.key, descriptor);
+			}
+		}
+		return function(Constructor, protoProps, staticProps) {
+			if (protoProps) defineProperties(Constructor.prototype, protoProps);
+			if (staticProps) defineProperties(Constructor, staticProps);
+		
+			return Constructor;
+		};
+	}();
+}
+
+if (!_classCallCheck) {
+	function _classCallCheck(instance, Constructor) 
+	{
+		if (!(instance instanceof Constructor)) {
+			throw new TypeError("Cannot call a class as a function");
+		}
+	}	
 }
 
 var Menu = function() 
